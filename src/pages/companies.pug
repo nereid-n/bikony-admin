@@ -1,0 +1,8 @@
+extends ../components/layout-default/layout-default
+include ../components/companies/companies
+
+block head
+  - var pageTitle = 'Companies';
+
+block content
+  +companies()

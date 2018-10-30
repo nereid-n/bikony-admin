@@ -1,0 +1,23 @@
+include ../top-content/top-content
+
+mixin messages()
+  .row.address-group
+    .col-12
+      h2.admin-table-title messages list
+      +top-content()
+      .admin-content-item
+        table.admin-table.admin-table-normal
+          tr
+            th #
+            th nouantity massege
+            th receiver phonr
+            th action
+          - for (var i = 1; i < 2; i++)
+            tr
+              td= i
+              td 21
+              td +8 914 362 17 94
+              td
+                button.btn.btn-gray.mr-2.btn-table Massage History
+        .address-group-showing
+          span Showing 1 to 0 of 0 entries
