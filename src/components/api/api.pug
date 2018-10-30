@@ -1,0 +1,20 @@
+include ../top-content/top-content
+
+mixin api()
+  .row.address-group
+    .col-12
+      h2.admin-table-title api list
+      +top-content()
+      .admin-content-item
+        table.admin-table
+          tr
+            th #
+            th Name
+            th action
+          - for (var i = 5; i < 10; i++)
+            tr
+              td= i
+              td superadmin
+              td
+                button.btn.btn-white.mr-2 Edit
+                button.btn.btn-blue Remove

@@ -1,0 +1,29 @@
+@import "vars"
+
+body
+  margin: 0
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+img
+  max-width: 100%
+  width: auto
+  height: auto
+
+.admin
+  height: 100vh
+  padding: 25px 0
+  font-family: $lato
+  font-size: 13px
+  background-color: #f1f1f1
+  &-main
+    display: flex
+    @media (max-width: 800px)
+      flex-wrap: wrap
+
+.admin-content
+  max-width: 100%
+  flex-grow: 1

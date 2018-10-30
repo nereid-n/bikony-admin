@@ -1,0 +1,61 @@
+mixin superadmin()
+  .row
+    .col-12
+      .admin-content-item
+        h2.admin-table-title Users TaBLE
+        table.admin-table
+          tr
+            th #
+            th Name
+            th Role
+            th Email
+            th Company
+          - for (var i = 5; i < 10; i++)
+            tr
+              td= i
+              td superadmin
+              td ROLE_SUPER_ADMIN
+              td
+                a(href="mailto:superadmin@ololo.com") superadmin@ololo.com
+              td testCompany
+    .col-xl-6
+      .admin-content-item
+        h2.admin-table-title Message Table
+        table.admin-table
+          tr
+            th #
+            th Phone From
+            th Phone to
+            th Content
+          - for (var i = 26; i < 31; i++)
+            tr
+              td= i
+              td
+                .has-icon
+                  span +1347 470 99 95
+                  img.admin-table-arrow(src="img/left-arrow.png" alt="")
+              td +1732 812 03 53
+              td.admin-table-light testCompany
+    .col-xl-6
+      .admin-content-item
+        h2.admin-table-title Company Table
+        table.admin-table
+          tr
+            th #
+            th Name
+          - for (var i = 5; i < 7; i++)
+            tr
+              td= i
+              td superadmin
+      .admin-content-item
+        h2.admin-table-title Departament Table
+        table.admin-table
+          tr
+            th #
+            th Name
+            th Company
+          - for (var i = 5; i < 8; i++)
+            tr
+              td= i
+              td superadmin
+              td testCompany

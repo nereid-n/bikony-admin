@@ -1,0 +1,73 @@
+mixin admin()
+  .row
+    .col-xl-6
+      .admin-content-item
+        h2.admin-table-title Users TaBLE
+        table.admin-table
+          tr
+            th #
+            th Name
+            th Email
+            th Company
+          - for (var i = 5; i < 10; i++)
+            tr
+              td= i
+              td superadmin
+              td
+                a(href="mailto:superadmin@ololo.com") superadmin@ololo.com
+              td testCompany
+    .col-xl-6
+      .admin-content-item
+        h2.admin-table-title Departament Table
+        table.admin-table
+          tr
+            th #
+            th Name
+            th Company
+          - for (var i = 5; i < 8; i++)
+            tr
+              td= i
+              td superadmin
+              td testCompany
+    .col-xl-6
+      .admin-content-item
+        h2.admin-table-title Message Table
+        table.admin-table
+          tr
+            th #
+            th Phone From
+            th Phone to
+            th Content
+          -
+            var table = [
+              {
+                className: "admin-table-blue",
+                text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, ab aspernatur consectetur deleniti deserunt dignissimos distinctio dolorem enim mollitia provident."
+              },
+              {
+                className: "admin-table-blue"
+              },
+              {},
+              {},
+              {}
+            ]
+          each item in table
+            tr(class=item.className)
+              td 26
+              td
+                .has-icon
+                  span +1347 470 99 95
+                  img.admin-table-arrow(src="img/left-arrow.png" alt="")
+              td +1732 812 03 53
+              td.admin-table-light= item.text || "testCompany"
+    .col-xl-6
+      .admin-content-item
+        h2.admin-table-title Company Table
+        table.admin-table
+          tr
+            th #
+            th Name
+          - for (var i = 5; i < 7; i++)
+            tr
+              td= i
+              td superadmin

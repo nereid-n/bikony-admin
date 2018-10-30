@@ -1,0 +1,96 @@
+.address-group .select2-selection--single
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 80px
+  height: 35px
+
+.address-group .select2-container
+  width: 80px !important
+  margin: 0 10px 0 15px
+
+.address-group .select2-container .select2-selection--single
+  background: linear-gradient(to bottom, #fdfdfe, #edf0f5)
+  border: 1px solid #ced0da
+  outline: none
+
+.address-group .select2-container .select2-selection--single:hover, .address-group .select2-container .select2-selection--single:focus
+  border: 1px solid #2ea2f8
+
+.address-group ~ .select2-container .select2-search
+  display: none
+
+.address-group .select2-container--default .select2-selection--single .select2-selection__arrow
+  top: 0
+  height: 100%
+  border-left: 1px solid #ced0da
+
+.address-group .select2-container--default .select2-selection--single .select2-selection__arrow b
+  width: 10px
+  height: 7px
+  border: none
+  background: url("../images/arrow.png") no-repeat 50% 50%
+  background-size: cover !important
+
+.address-group .select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b
+  transform: rotate(180deg)
+
+.address-group-search .select2-container--default .select2-selection--single .select2-selection__rendered
+  font-family: 'ProximaNova', sans-serif
+  font-weight: 400
+
+.address-group-search
+  font-family: 'Open Sans', sans-serif
+  font-weight: bold
+  font-size: 12px
+  color: #282828
+  @media (max-width: 768px)
+    justify-content: center
+    flex-wrap: wrap
+
+.address-search
+  position: relative
+  margin-left: 90px
+  @media (max-width: 768px)
+    margin-top: 20px
+    margin-left: 25px
+
+
+.address-search input
+  margin-left: 20px
+  padding: 0 35px 0 15px
+  width: 245px
+  height: 35px
+  font-family: 'ProximaNova', sans-serif
+  font-weight: 800
+  font-size: 14px
+  color: #354052
+  border: 1px solid #ced0da
+  border-radius: 5px
+  outline: none
+
+.address-search input:focus, .address-search input:hover
+  border: 1px solid #2ea2f8
+
+.address-search:before
+  content: ''
+  position: absolute
+  right: 10px
+  width: 20px
+  height: 20px
+  background: url(../images/search-input.png) no-repeat 50% 50%
+  background-size: cover
+
+.address-group .admin-table th:first-child, .address-group .admin-table td:first-child
+  width: 115px
+  text-align: left
+  @media (max-width: 767px)
+    width: 50px
+
+.address-group-showing
+  color: #282828
+  font-family: "Open Sans", sans-serif
+  font-size: 12px
+  font-weight: bold
+  line-height: 48px
+  letter-spacing: 0.17px

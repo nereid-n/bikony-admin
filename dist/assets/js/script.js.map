@@ -1,0 +1,1 @@
+{"version":3,"sources":["script.js"],"names":["$","document","ready","select2"],"mappings":";;AAAAA,EAAAC,QAAA,EAAAC,KAAA,CAAA,YAAA;AACAF,IAAA,sBAAA,EAAAG,OAAA;AACA,CAFA","file":"script.js","sourcesContent":["$(document).ready(function() {\r\n  $('.js_addressGroupShow').select2();\r\n});"]}
