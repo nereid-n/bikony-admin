@@ -1,0 +1,8 @@
+extends ../components/layout-default/layout-default
+include ../components/address-group-add/address-group-add
+
+block head
+  - var pageTitle = 'address-group-add';
+
+block content
+  +address-group-add()
