@@ -1,0 +1,8 @@
+extends ../components/layout-default/layout-default
+include ../components/users-add/users-add
+
+block head
+  - var pageTitle = 'Users Add';
+
+block content
+  +users-add()

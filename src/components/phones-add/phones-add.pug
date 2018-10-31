@@ -1,0 +1,15 @@
+mixin phones-add()
+  .row
+    .col-12
+      h2.admin-table-title phone form
+      .group-add
+        -
+          var inputs = [
+          'Phone*',
+          'Company*'
+          ]
+        each item in inputs
+          span.add-title= item
+          .input-block
+            input.width100
+        button.btn.btn-blue.btn-big.my-4 Send
