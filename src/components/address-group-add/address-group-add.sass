@@ -1,11 +1,20 @@
+@import "../../shared/sass/vars"
+
 .address-group-add
 	display: block
 
+.add-title
+  display: block
+  font-size: 13px
+  font-family: $openSans
+  font-weight: bold
+
 .group-add
-  padding: 18px 0 30px
+  margin-top: 20px
+  padding: 18px 25px 30px
   background-color: #ffffff
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.1)
   &__head
-    padding: 0 25px
     font-size: 13px
     font-family: "Open Sans", sans-serif
     font-weight: bold
@@ -67,23 +76,20 @@
 .bottom-left
   display: flex
   flex-direction: column
-  padding: 15px 25px
+  padding: 15px 25px 15px 0
   @media (max-width: 993px)
     max-width: 100%
   & span
     font-size: 13px
     font-family: "Open Sans", sans-serif
     font-weight: bold
-  & .input-block
-    margin-top: 16px
-    margin-bottom: 23px
   &__add-phone
     display: flex
     align-items: center
     & .btn
       font-size: 13px
     & span
-      color: #006ef4
+      color: $button-blue
     &__btn
       display: flex
       align-items: center
@@ -101,7 +107,7 @@
         height: 24px
         margin-right: 17px
         color: #ffffff
-        background-color: #006ef4
+        background-color: $button-blue
         border-radius: 50%
         & span
           font-size: 17px
@@ -111,7 +117,7 @@
 .bottom-right
   display: flex
   flex-direction: column
-  padding: 15px 25px 15px 0
+  padding: 15px 0
   @media (max-width: 1200px)
     padding-left: 25px
   @media (max-width: 993px)

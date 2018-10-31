@@ -9,11 +9,13 @@ $(document).ready(function () {
     dropdownAutoWidth: true
   });
 
-  var input = $('.input-block input');
-  input.on('input', function () {
-    if (input.val() !== '') {
-      $(this).parent().addClass('input-active');
-    }
-  });
+  var input = document.querySelectorAll('.input-block input');
+  for (var i = 0; i < input.length; i++) {
+    input[i].oninput = function () {
+      if (this.value !== '') {
+        this.closest('.input-block').classList.add('input-active');
+      }
+    };
+  }
 });
 //# sourceMappingURL=script.js.map

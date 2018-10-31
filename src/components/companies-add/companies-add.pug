@@ -1,0 +1,35 @@
+mixin companies-add()
+  .row
+    .col-12
+      h2.admin-table-title Company form
+      +b.add-companies
+        .col-12
+          +b('span').add-title Company name*
+          +b.input-block
+            +b('input')(type='text').width100
+          +b('span').add-title Select a company manager
+          +b.select-multiple.select-companies.jsManager
+            +b('select')(name='items' multiple='multiple').jsGroupAddMultiple
+              +b('option')(value='item1') Focuse
+              +b('option')(value='item2') Focuse
+              +b('option')(value='item3') Focuse
+              +b('option')(value='item4') Focuse
+              +b('option')(value='item5') Focuse
+              +b('option')(value='item6') Focuse
+              +b('option')(value='item7') Focuse
+              +b('option')(value='item8') Focuse
+          +b('span').add-title Phones
+          +b.select-multiple.select-companies.jsPhone
+            +b('select')(name='items' multiple='multiple').jsGroupAddMultiple
+              +b('option')(value='item1') + 8 345 223 15 33
+              +b('option')(value='item2') + 8 345 223 15 33
+              +b('option')(value='item3') + 8 345 223 15 33
+              +b('option')(value='item4') + 8 345 223 15 33
+              +b('option')(value='item5') + 8 345 223 15 33
+              +b('option')(value='item6') + 8 345 223 15 33
+              +b('option')(value='item7') + 8 345 223 15 33
+              +b('option')(value='item8') + 8 345 223 15 33
+          +b('span').add-title API
+          +b.input-block
+            +b('input')(type='text').width100
+          button.btn.btn-blue.btn-big Send

@@ -1,0 +1,22 @@
+include ../top-content/top-content
+
+mixin deferred-message()
+  .row.address-group
+    .col-12
+      h2.admin-table-title deferred list
+      +top-content()
+      .admin-content-item
+        table.admin-table.admin-table-normal
+          tr
+            th #
+            th status
+            th date sent
+            th action
+          - for (var i = 1; i < 3; i++)
+            tr
+              td
+              td
+              td
+              td
+        .address-group-showing
+          span Showing 0 to 0 of 0 entries
