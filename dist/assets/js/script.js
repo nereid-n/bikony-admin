@@ -3,6 +3,7 @@
 $(document).ready(function () {
   $('.js_addressGroupShow').select2();
 });
+
 $(document).ready(function () {
   $('.jsGroupAddMultiple').select2({
     dropdownAutoWidth: true
