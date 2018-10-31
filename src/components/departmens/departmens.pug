@@ -1,0 +1,21 @@
+include ../top-content/top-content
+
+mixin departmens()
+  .row.address-group
+    .col-12
+      h2.admin-table-title departament list
+      +top-content()
+      .admin-content-item
+        table.admin-table.admin-table-normal
+          tr
+            th #
+            th name
+            th action
+          - for (var i = 1; i < 2; i++)
+            tr
+              td= i
+              td it
+              td
+                button.btn.btn-blue.btn-table Remove
+        .address-group-showing
+          span Showing 0 to 0 of 0 entries

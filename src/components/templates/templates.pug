@@ -1,0 +1,19 @@
+include ../top-content/top-content
+
+mixin templates()
+  .row.address-group
+    .col-12
+      h2.admin-table-title template list
+      +top-content()
+      .admin-content-item
+        table.admin-table.admin-table-normal
+          tr
+            th #
+            th name
+            th content
+            th action
+          - for (var i = 1; i < 2; i++)
+            tr
+              td(colspan="4").text-center.c-black No data available in table
+        .address-group-showing
+          span Showing 0 to 0 of 0 entries
