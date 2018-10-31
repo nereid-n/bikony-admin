@@ -1,0 +1,8 @@
+extends ../components/layout-default/layout-default
+include ../components/api-add/api-add
+
+block head
+  - var pageTitle = 'API add';
+
+block content
+  +api-add()

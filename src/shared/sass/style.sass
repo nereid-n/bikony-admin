@@ -13,8 +13,24 @@ img
   width: auto
   height: auto
 
+input:focus, input:hover
+  border: 1px solid #2ea2f8 !important
+
+.input-active
+  position: relative
+  width: max-content
+  & input
+    border: 1px solid #1bb934 !important
+  &:after
+    content: ''
+    position: absolute
+    top: 12px
+    right: 12px
+    width: 11px
+    height: 9px
+    background: url("../images/checkmark.svg") no-repeat 50% 50%
+
 .admin
-  height: 100vh
   padding: 25px 0
   font-family: $lato
   font-size: 13px

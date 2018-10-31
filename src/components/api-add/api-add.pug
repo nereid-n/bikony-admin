@@ -1,0 +1,15 @@
+mixin api-add()
+  .row
+    .col-12
+      h2.admin-table-title group add
+      .group-add
+        -
+          var inputs = [
+            'API Name*',
+            'API Url*',
+            'API User*',
+            'API Password*'
+          ]
+        span.add-title API Name*
+        .input-block
+          input

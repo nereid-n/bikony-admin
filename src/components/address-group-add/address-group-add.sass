@@ -1,0 +1,177 @@
+@import "../../shared/sass/vars"
+
+.address-group-add
+	display: block
+
+.add-title
+  font-size: 13px
+  font-family: $openSans
+  font-weight: bold
+
+.group-add
+  margin-top: 20px
+  padding: 18px 25px 30px
+  background-color: #ffffff
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.1)
+  &__head
+    font-size: 13px
+    font-family: "Open Sans", sans-serif
+    font-weight: bold
+    border-bottom: 6px solid #f7f7f5
+    & hr
+      position: relative
+      left: 13px
+      background-color: #e8e8e8
+    &__radio-btn
+      display: flex
+      flex-direction: column
+  &__bottom
+    display: flex
+    flex-wrap: wrap
+    @media (max-width: 1200px)
+      flex-direction: column
+
+.radio
+  position: absolute
+  z-index: -1
+  opacity: 0
+  margin: 10px 0 0 7px
+
+.radio + label
+  position: relative
+  margin-bottom: 20px
+  padding: 0 0 0 35px
+  font-size: 13px
+  font-family: "Open Sans", sans-serif
+  font-weight: bold
+  cursor: pointer
+
+.radio + label:before
+  content: ''
+  position: absolute
+  top: 2px
+  left: 0
+  width: 15px
+  height: 15px
+  border: 2px solid #e3e3e3
+  border-radius: 50%
+  background: #FFF
+
+.radio + label:after
+  content: ''
+  position: absolute
+  top: 7px
+  left: 5px
+  width: 5px
+  height: 5px
+  border-radius: 50%
+  background: #afafaf
+  opacity: 0
+  transition: .2s
+
+.radio:checked + label:after
+  opacity: 1
+
+
+.bottom-left
+  display: flex
+  flex-direction: column
+  padding: 15px 25px 15px 0
+  @media (max-width: 993px)
+    max-width: 100%
+  & span
+    font-size: 13px
+    font-family: "Open Sans", sans-serif
+    font-weight: bold
+  & .input-block
+    margin-top: 16px
+    margin-bottom: 23px
+  & input
+    padding: 0 35px 0 15px
+    width: 245px
+    height: 35px
+    font-family: 'ProximaNova', sans-serif
+    font-weight: 800
+    font-size: 14px
+    color: #354052
+    border: 1px solid #ced0da
+    border-radius: 5px
+    outline: none
+  & .select2-container--default .select2-selection--multiple
+    width: 380px
+    height: 70px
+    @media (max-width: 450px)
+      width: auto
+  & .select2-container
+    margin-top: 10px
+    margin-bottom: 20px
+  &__add-phone
+    display: flex
+    align-items: center
+    & .btn
+      font-size: 13px
+    & span
+      color: $button-blue
+    &__btn
+      display: flex
+      align-items: center
+      margin-right: 60px
+      padding: 0
+      background: none
+      border: none
+      cursor: pointer
+      outline: none
+      &__fon
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 24px
+        height: 24px
+        margin-right: 17px
+        color: #ffffff
+        background-color: $button-blue
+        border-radius: 50%
+        & span
+          font-size: 17px
+          color: #ffffff
+          line-height: 0
+  & .select2-container--default .select2-selection--multiple .select2-selection__rendered
+    padding: 0 3px
+  & .select2-container--default .select2-selection--multiple .select2-selection__choice
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: row-reverse
+    min-width: 90px
+    height: 30px
+    margin-top: 3px
+    margin-right: 3px
+  & .select2-container--default .select2-selection--multiple .select2-selection__choice__remove
+    margin-left: 10px
+    font-size: 17px
+  & .select2-container--default.select2-container--focus .select2-selection--multiple
+    border: 1px solid #2ea2f8
+    outline: none
+
+.bottom-right
+  display: flex
+  flex-direction: column
+  padding: 15px 0
+  @media (max-width: 1200px)
+    padding-left: 25px
+  @media (max-width: 993px)
+    max-width: 100%
+  & span
+    font-size: 13px
+    font-family: "Open Sans", sans-serif
+    font-weight: bold
+  & textarea
+    margin-top: 16px
+    border-radius: 5px
+    outline: none
+  & p
+    margin-top: 9px
+    font-family: 'ProximaNova', sans-serif
+    font-size: 12px
+    font-weight: 400
+    color: #7f8fa4
