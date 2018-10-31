@@ -1,0 +1,24 @@
+mixin users-add()
+  .row
+    .col-12
+      h2.admin-table-title add / edit form
+      .group-add
+        -
+          var inputs = [
+            {
+              title: 'Username*'
+            },
+            {
+              title: 'Email',
+              type: 'email'
+            },
+            {
+              title: 'Password*',
+              type: 'password'
+            }
+          ]
+        each item in inputs
+          span.add-title= item.title
+          .input-block
+            input.width100(type= item.type || 'text')
+        button.btn.btn-blue.btn-big.my-4 Send
