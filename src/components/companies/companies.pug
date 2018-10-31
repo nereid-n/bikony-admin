@@ -1,9 +1,9 @@
 include ../top-content/top-content
 
-mixin api()
+mixin companies()
   .row.address-group
     .col-12
-      h2.admin-table-title api list
+      h2.admin-table-title Company list
       +top-content()
       .admin-content-item
         table.admin-table.admin-table-normal
@@ -14,7 +14,7 @@ mixin api()
           - for (var i = 5; i < 10; i++)
             tr
               td= i
-              td API_superadmin
+              td One_superadmin_Company
               td
                 button.btn.btn-white.mr-2.btn-table Edit
                 button.btn.btn-blue.btn-table Remove

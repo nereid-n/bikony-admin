@@ -1,0 +1,8 @@
+extends ../components/layout-default/layout-default
+include ../components/phones/phones
+
+block head
+  - var pageTitle = 'Phones';
+
+block content
+  +phones()
