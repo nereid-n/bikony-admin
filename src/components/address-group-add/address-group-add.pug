@@ -19,7 +19,7 @@ mixin address-group-add()
             +b.input-block
               +e('input')(type='text')
             +e('span') Description
-            +b.select-multiple
+            +b.select-multiple.jsAddrAdd
               +b('select')(name='items' multiple='multiple').jsGroupAddMultiple
                 +b('option')(value='item1') item1
                 +b('option')(value='item2') item2
@@ -37,7 +37,7 @@ mixin address-group-add()
                 +e.add-phone__btn__fon
                   +e('span') +
                 +e('span').add-phone__btn__text Add new phone
-              button.btn.btn-blue Send
+              button.btn.btn-blue.btn-big Send
           +b.bottom-right.col-6
             +e('span') Contact list
             +e('textarea')(rows='7' cols='55')

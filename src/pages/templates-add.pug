@@ -1,0 +1,8 @@
+extends ../components/layout-default/layout-default
+include ../components/templates-add/templates-add
+
+block head
+  - var pageTitle = 'templates-add';
+
+block content
+  +templates-add()

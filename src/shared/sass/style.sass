@@ -2,6 +2,7 @@
 
 body
   margin: 0
+  background-color: #f1f1f1
 
 *
   -webkit-box-sizing: border-box
@@ -39,6 +40,7 @@ textarea
   font-size: 13px
   font-family: "Open Sans", sans-serif
   font-weight: bold
+  border: 1px solid #ced0da
   border-radius: 5px
   resize: none
   outline: none
@@ -76,6 +78,21 @@ input:focus, input:hover, textarea:focus, textarea:hover
 .c-black
   color: #282828 !important
 
+.select-active
+  position: relative
+  border: 1px solid #1bb934 !important
+  &:after
+    content: ''
+    position: absolute
+    top: 12px
+    right: 12px
+    width: 11px
+    height: 9px
+    background: url("../images/checkmark.svg") no-repeat 50% 50%
+
+.select2-container--default .select2-selection--multiple
+  border: 1px solid #ced0da
+
 .select-multiple
   & .select2-container--default .select2-selection--multiple
     width: 380px
@@ -102,3 +119,25 @@ input:focus, input:hover, textarea:focus, textarea:hover
   & .select2-container--default.select2-container--focus .select2-selection--multiple
     border: 1px solid #2ea2f8
     outline: none
+
+.select-companies
+  & .select2-container--default .select2-selection--multiple
+    width: auto
+    min-height: 135px
+  & .select2-container
+    width: 100%!important
+  & .select2-container--default .select2-selection--multiple .select2-selection__choice
+    height: 15px
+    font-family: 'ProximaNova', sans-serif
+    font-size: 14px
+    font-weight: bold
+    color: #354052
+    border: none
+    background: none
+  & .select2-container--default .select2-selection--multiple .select2-selection__rendered
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    flex-wrap: wrap
+    height: 135px
+    padding: 13px 6px
