@@ -19,15 +19,16 @@ mixin address-group-add()
             +b.input-block
               +e('input')(type='text')
             +e('span') Description
-            +b('select')(name='items' multiple='multiple').jsGroupAddMultiple
-              +b('option')(value='item1') item1
-              +b('option')(value='item2') item2
-              +b('option')(value='item3') item3
-              +b('option')(value='item4') item4
-              +b('option')(value='item5') item5
-              +b('option')(value='item6') item6
-              +b('option')(value='item7') item7
-              +b('option')(value='item8') item8
+            +b.select-multiple
+              +b('select')(name='items' multiple='multiple').jsGroupAddMultiple
+                +b('option')(value='item1') item1
+                +b('option')(value='item2') item2
+                +b('option')(value='item3') item3
+                +b('option')(value='item4') item4
+                +b('option')(value='item5') item5
+                +b('option')(value='item6') item6
+                +b('option')(value='item7') item7
+                +b('option')(value='item8') item8
             +e('span') New phone
             +b.input-block
               +e('input')(type='text')

@@ -13,12 +13,41 @@ img
   width: auto
   height: auto
 
+.width100
+  width: 100%
+
+.input-block
+  margin-top: 10px
+  margin-bottom: 20px
+
+input
+  padding: 0 35px 0 15px
+  width: 245px
+  height: 35px
+  font-family: 'ProximaNova', sans-serif
+  font-weight: 800
+  font-size: 14px
+  color: #354052
+  border: 1px solid #ced0da
+  border-radius: 5px
+  outline: none
+
+textarea
+  margin-top: 10px
+  margin-bottom: 20px
+  padding: 15px
+  font-size: 13px
+  font-family: "Open Sans", sans-serif
+  font-weight: bold
+  border-radius: 5px
+  resize: none
+  outline: none
+
 input:focus, input:hover
   border: 1px solid #2ea2f8 !important
 
 .input-active
   position: relative
-  width: max-content
   & input
     border: 1px solid #1bb934 !important
   &:after
@@ -46,3 +75,30 @@ input:focus, input:hover
 
 .c-black
   color: #282828 !important
+
+.select-multiple
+  & .select2-container--default .select2-selection--multiple
+    width: 380px
+    height: 70px
+    @media (max-width: 450px)
+      width: auto
+  & .select2-container
+    margin-top: 10px
+    margin-bottom: 20px
+  & .select2-container--default .select2-selection--multiple .select2-selection__rendered
+    padding: 0 3px
+  & .select2-container--default .select2-selection--multiple .select2-selection__choice
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: row-reverse
+    min-width: 90px
+    height: 30px
+    margin-top: 3px
+    margin-right: 3px
+  & .select2-container--default .select2-selection--multiple .select2-selection__choice__remove
+    margin-left: 10px
+    font-size: 17px
+  & .select2-container--default.select2-container--focus .select2-selection--multiple
+    border: 1px solid #2ea2f8
+    outline: none
