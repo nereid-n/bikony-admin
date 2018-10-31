@@ -3,9 +3,10 @@
 $(document).ready(function () {
   $('.js_addressGroupShow').select2();
 });
-
 $(document).ready(function () {
-  $('.jsGroupAddMultiple').select2();
+  $('.jsGroupAddMultiple').select2({
+    dropdownAutoWidth: true
+  });
 
   var input = $('.input-block input');
   input.on('input', function () {
