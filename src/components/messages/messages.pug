@@ -1,4 +1,5 @@
 include ../top-content/top-content
+include ../pagination/pagination
 
 mixin messages()
   .row.address-group
@@ -21,3 +22,4 @@ mixin messages()
                 button.btn.btn-gray.mr-2.btn-table Massage History
         .address-group-showing
           span Showing 1 to 0 of 0 entries
+        +pagination()

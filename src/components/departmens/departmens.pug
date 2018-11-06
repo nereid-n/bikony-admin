@@ -1,4 +1,5 @@
 include ../top-content/top-content
+include ../pagination/pagination
 
 mixin departmens()
   .row.address-group
@@ -19,3 +20,4 @@ mixin departmens()
                 button.btn.btn-blue.btn-table Remove
         .address-group-showing
           span Showing 0 to 0 of 0 entries
+        +pagination()
