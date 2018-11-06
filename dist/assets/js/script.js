@@ -17,5 +17,35 @@ $(document).ready(function () {
       }
     };
   }
+
+  if ($('.jsManager').length > 0) {
+    var manager = document.querySelector('.jsManager');
+    var managerBlock = manager.querySelector('.select2-selection--multiple');
+    managerBlock.onblur = function () {
+      var select = manager.querySelectorAll('.select2-selection__rendered li');
+      if (select.length > 1) {
+        this.closest('.select2-selection--multiple').classList.add('select-active');
+      }
+    };
+
+    var phone = document.querySelector('.jsPhone');
+    var phoneBlock = phone.querySelector('.select2-selection--multiple');
+    phoneBlock.onblur = function () {
+      var select = phone.querySelectorAll('.select2-selection__rendered li');
+      if (select.length > 1) {
+        this.closest('.select2-selection--multiple').classList.add('select-active');
+      }
+    };
+  }
+  if ($('.jsAddrAdd').length > 0) {
+    var addrAdd = document.querySelector('.jsAddrAdd');
+    var addrAddBlock = addrAdd.querySelector('.select2-selection--multiple');
+    addrAddBlock.onblur = function () {
+      var select = addrAdd.querySelectorAll('.select2-selection__rendered li');
+      if (select.length > 1) {
+        this.closest('.select2-selection--multiple').classList.add('select-active');
+      }
+    };
+  }
 });
 //# sourceMappingURL=script.js.map

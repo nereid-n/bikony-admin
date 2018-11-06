@@ -1,0 +1,11 @@
+mixin templates-add()
+  .row.address-group
+    .col-12
+      h2.admin-table-title api form
+      +b.add-templates
+        +b('span').add-title Name*
+        +b.input-block
+          +b('input')(type='text').width100
+        +b('span').add-title Content*
+        +b('textarea')(rows='7' cols='55').width100
+        button.btn.btn-blue.btn-big Send
