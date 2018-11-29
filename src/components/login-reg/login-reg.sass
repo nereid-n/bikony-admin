@@ -1,0 +1,134 @@
+.login-reg
+  display: block
+  width: 100vw
+  height: 100vh
+  background-color: #343a40
+  & button
+    font-size: 13px
+    font-weight: 500
+
+.btn-ligin-reg
+  position: relative
+  top: 50px
+  display: block
+  width: max-content
+  height: max-content
+  margin: auto
+  padding: 20px
+  background-color: #ffffff
+  border-radius: 3px
+
+.login-reg-block
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  display: block
+  width: max-content
+  height: max-content
+  margin: auto
+  padding: 20px
+  background-color: #ffffff
+  border-radius: 3px
+  @media (max-width: 575px)
+    top: 0
+    height: 100%
+    transform: translateX(-50%)
+    overflow-y: scroll
+
+.body-overflow
+  overflow: hidden
+
+.modal-container
+  position: fixed
+  top: 0
+  left: 0
+  display: none
+  align-items: center
+  justify-content: center
+  width: 100%
+  height: 100%
+
+.active-modal
+  display: flex !important
+
+.overlay
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(52, 58, 64, .7)
+
+.btn-ligin-reg
+  & button
+    width: 100px
+    margin: 20px 10px
+
+input::-webkit-input-placeholder  /* Chrome/Opera/Safari */
+  color: #d0bcaa
+
+input::-moz-placeholder  /* Firefox 19+ */
+  color: #d0bcaa
+
+input:-ms-input-placeholder /* IE 10+ */
+  color: #d0bcaa
+
+input:-moz-placeholder /* Firefox 18- */
+  color: #d0bcaa
+
+.login-block
+  display: none
+  & .form-group
+    display: flex
+    flex-direction: column
+    max-width: 350px
+    width: 350px
+    @media (max-width: 375px)
+      width: 290px
+    & > label
+      margin-top: 15px
+      text-transform: uppercase
+      color: #d0bcaa
+    & > input
+      width: 100%
+    &__block
+      display: flex
+      justify-content: space-between
+      margin-top: 15px
+      & label
+        display: flex
+        align-items: center
+        font-family: "Open Sans", sans-serif
+        font-size: 13px
+        font-weight: 500
+        color: #d0bcaa
+        & input
+          width: 15px
+          height: 15px
+          margin-right: 5px
+      & a
+        font-family: "Open Sans", sans-serif
+        font-size: 13px
+        font-weight: 500
+        text-decoration: none
+        &:hover
+          text-decoration: none
+    & > button
+      width: 100%
+      margin-top: 15px
+      padding: 10px 15px
+      border-radius: 0
+    &__bottom
+      display: flex
+      justify-content: center
+      align-items: center
+      & span
+        font-family: "Open Sans", sans-serif
+        font-size: 13px
+        font-weight: 500
+        color: #d0bcaa
+      & button
+        background: none
+        border: none
+        cursor: pointer

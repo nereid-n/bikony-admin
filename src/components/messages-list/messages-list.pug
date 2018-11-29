@@ -1,0 +1,43 @@
+include ../top-content/top-content
+include ../pagination/pagination
+
+mixin messages-list()
+  .row.address-group
+    .col-12
+      h2.admin-table-title messagesList
+      +top-content()
+      .admin-content-item
+        table.admin-table.admin-table-normal
+          tr
+            th #
+            th Quantily message
+            th Receiver phone
+            th Action
+          - for (var i = 1; i < 10; i++)
+          tr.admin-table-light-blue
+            td= 1
+            td 20
+            td +00000000000
+            td
+              button.btn.btn-secondary.btn-table.btn-message-list Message History
+          tr
+            td= 2
+            td 4
+            td +22222222222
+            td
+              button.btn.btn-secondary.btn-table.btn-message-list Message History
+          tr.admin-table-light-blue
+            td= 3
+            td 1
+            td +33333333333
+            td
+              button.btn.btn-secondary.btn-table.btn-message-list Message History
+          tr
+            td= 4
+            td 2
+            td +12121212121
+            td
+              button.btn.btn-secondary.btn-table.btn-message-list Message History
+        .address-group-showing
+          span Showing 1 to 9 of 9 entries
+        +pagination()

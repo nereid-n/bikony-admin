@@ -1,0 +1,8 @@
+extends ../components/layout-login-reg/layout-login-reg
+include ../components/login-reg/login-reg
+
+block head
+  - var pageTitle = 'login-reg';
+
+block content
+  +login-reg()

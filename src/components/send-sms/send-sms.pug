@@ -1,0 +1,53 @@
+mixin send-sms()
+  .row.address-group
+    .col-12
+      h2.admin-table-title Send SMS
+      +b.add-templates
+        +b('span').add-title Select a way to send*:
+        +b.send-sms-radio-btn
+          +e('label')
+            +e('input')(type='radio' name='phone')
+            | Phone
+          +e('label')
+            +e('input')(type='radio' name='phone')
+            | Group
+        +b('span').add-title To*
+        +b.input-block
+          +b('input')(type='text').width100
+        +b.add-title From*
+        +b.from-select2
+          +b('select').jsSendSelect
+            +b('option')
+            +b('option') 1
+            +b('option') 2
+            +b('option') 3
+            +b('option') 4
+        +b.add-title Template message
+        +b.from-select2
+          +b('select').jsTemplateSelect
+            +b('option')
+            +b('option') 1
+            +b('option') 2
+            +b('option') 3
+            +b('option') 4
+        +b('span').add-title Text message
+        +b('textarea')(rows='7' cols='55').width100.send-textarea
+        +b('p').text-secondary 160 characters remaining 1 message(s)
+        +b('span').add-title Date
+        +b.send-date-block
+          +e('input')(type='date')
+          +e.select-block
+            +e('select')
+              +e('option')
+              +e('option') 1
+              +e('option') 2
+              +e('option') 3
+              +e('option') 4
+            +e('span') :
+            +e('select')
+              +e('option')
+              +e('option') 1
+              +e('option') 2
+              +e('option') 3
+              +e('option') 4
+        button.btn.btn-blue.btn-big Send

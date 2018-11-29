@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>login-reg</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="assets/libs/select2/select2.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <section class="login-reg">
+      <div class="container">
+        <div class="btn-ligin-reg jsBlockLogReb">
+          <button class="btn btn-success jsBtnLogin">Login
+          </button>
+          <button class="btn btn-success jsBtnReg">Registration
+          </button>
+        </div>
+        <div class="modal-container jsOpenModal">
+          <div class="overlay jsOverlay">
+          </div>
+          <div class="login-reg-block">
+            <form class="login-block jsLogin">
+              <div class="form-group">
+                <label for="username">username
+                </label><input type="text" placeholder="Username" id="username"/>
+                <label for="pass">password
+                </label><input type="password" placeholder="Password" id="pass"/>
+                <div class="form-group__block">
+                  <label for="checkbox"><input type="checkbox" id="checkbox"/>Remember Me
+                  </label><a class="text-danger" href="#">Forgotten Password?</a>
+                </div>
+                <button class="btn btn-success">SIGN IN
+                </button>
+                <div class="form-group__bottom"><span>Don`t have account ?</span>
+                  <button class="text-danger jsOpenReg">Sign Up Here
+                  </button>
+                </div>
+              </div>
+            </form>
+            <form class="login-block jsReg">
+              <div class="form-group">
+                <label for="username2">username
+                </label><input type="text" placeholder="Username" id="username2"/>
+                <label for="email">email
+                </label><input type="email" placeholder="Email" id="email"/>
+                <label for="pass2">password
+                </label><input type="password" placeholder="Password" id="pass2"/>
+                <label for="pass3">password again
+                </label><input type="password" placeholder="Password again" id="pass3"/>
+                <button class="btn btn-success">Registration
+                </button>
+                <div class="form-group__bottom"><span>Have account ?</span>
+                  <button class="text-danger jsOpenLogin">Sign Up Here
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="assets/libs/jquery-3.3.1.min.js"></script>
+    <script src="assets/libs/select2/select2.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+mixin login-reg()
+  +b('section').login-reg
+    +b.container
+      +b.btn-ligin-reg.jsBlockLogReb
+        +b('button').btn.btn-success.jsBtnLogin Login
+        +b('button').btn.btn-success.jsBtnReg Registration
+      +b.modal-container.jsOpenModal
+        +b.overlay.jsOverlay
+        +b.login-reg-block
+          +b('form').login-block.jsLogin
+            +b.form-group
+              +e('label')(for='username') username
+              +e('input')(type='text' placeholder='Username')#username
+              +e('label')(for='pass') password
+              +e('input')(type='password' placeholder='Password')#pass
+              +e.block
+                +e('label')(for='checkbox')
+                  +e('input')(type='checkbox')#checkbox
+                  | Remember Me
+                +b('a')(href='#').text-danger Forgotten Password?
+              +b('button').btn.btn-success SIGN IN
+              +e.bottom
+                +e('span') Don`t have account ?
+                +b('button').text-danger.jsOpenReg Sign Up Here
+          +b('form').login-block.jsReg
+            +b.form-group
+              +e('label')(for='username2') username
+              +e('input')(type='text' placeholder='Username')#username2
+              +e('label')(for='email') email
+              +e('input')(type='email' placeholder='Email')#email
+              +e('label')(for='pass2') password
+              +e('input')(type='password' placeholder='Password')#pass2
+              +e('label')(for='pass3') password again
+              +e('input')(type='password' placeholder='Password again')#pass3
+              +b('button').btn.btn-success Registration
+              +e.bottom
+                +e('span') Have account ?
+                +b('button').text-danger.jsOpenLogin Sign Up Here

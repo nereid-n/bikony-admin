@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Send SMS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="assets/libs/select2/select2.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <section class="admin">
+      <div class="container">
+        <div class="admin-top">
+          <div class="admin-avatar"><img src="assets/images/photo.png" alt=""/></div>
+          <div class="admin-info">
+            <div class="admin-name"><span>Tom Mascott</span></div>
+            <div class="admin-city has-icon"><img class="admin-icon" src="assets/images/place.png" alt=""/><span>Manchester, USA</span></div>
+            <div class="admin-money has-icon"><img class="admin-icon" src="assets/images/wallet.png" alt=""/><span>236$</span></div>
+          </div>
+        </div>
+        <div class="admin-main">
+          <div class="admin-sidebar-section">
+            <div class="admin-sidebar">
+              <ul class="admin-sidebar-list">
+                <li class="admin-sidebar-item"><a href="#"><span class="admin-icon-fix-width"><img class="admin-icon" src="assets/images/videocall.png" alt=""/></span><span>Dashboard</span></a></li>
+                <li class="admin-sidebar-item"><a href="#"><span class="admin-icon-fix-width"><img class="admin-icon" src="assets/images/add-contact.png" alt=""/></span><span>Users</span></a></li>
+                <li class="admin-sidebar-item"><a href="#"><span class="admin-icon-fix-width"><img class="admin-icon" src="assets/images/smartphone.png" alt=""/></span><span>Phones</span></a></li>
+                <li class="admin-sidebar-item admin-sidebar-item-active"><a href="#"><span class="admin-icon-fix-width"><img class="admin-icon" src="assets/images/position.png" alt=""/></span><span>Departments</span></a></li>
+                <li class="admin-sidebar-item"><a href="#"><span class="admin-icon-fix-width"><img class="admin-icon" src="assets/images/search.png" alt=""/></span><span>Companles</span></a></li>
+                <li class="admin-sidebar-item"><a href="#"><span class="admin-icon-fix-width"><img class="admin-icon" src="assets/images/speaking.png" alt=""/></span><span>Contacts management</span></a></li>
+                <li class="admin-sidebar-item"><a href="#"><span class="admin-icon-fix-width"><img class="admin-icon" src="assets/images/email.png" alt=""/><span class="message-number">13</span></span><span>Messages</span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="admin-content">
+            <div class="row address-group">
+              <div class="col-12">
+                <h2 class="admin-table-title">Send SMS</h2>
+                <div class="add-templates"><span class="add-title">Select a way to send*:</span>
+                  <div class="send-sms-radio-btn">
+                    <label><input type="radio" name="phone"/>Phone
+                    </label>
+                    <label><input type="radio" name="phone"/>Group
+                    </label>
+                  </div><span class="add-title">To*</span>
+                  <div class="input-block"><input class="width100" type="text"/>
+                  </div>
+                  <div class="add-title">From*
+                  </div>
+                  <div class="from-select2">
+                    <select class="jsSendSelect">
+                      <option>
+                      </option>
+                      <option>1
+                      </option>
+                      <option>2
+                      </option>
+                      <option>3
+                      </option>
+                      <option>4
+                      </option>
+                    </select>
+                  </div>
+                  <div class="add-title">Template message
+                  </div>
+                  <div class="from-select2">
+                    <select class="jsTemplateSelect">
+                      <option>
+                      </option>
+                      <option>1
+                      </option>
+                      <option>2
+                      </option>
+                      <option>3
+                      </option>
+                      <option>4
+                      </option>
+                    </select>
+                  </div><span class="add-title">Text message</span><textarea class="width100 send-textarea" rows="7" cols="55"></textarea>
+                  <p class="text-secondary">160 characters remaining 1 message(s)
+                  </p><span class="add-title">Date</span>
+                  <div class="send-date-block"><input type="date"/>
+                    <div class="send-date-block__select-block">
+                      <select>
+                        <option>
+                        </option>
+                        <option>1
+                        </option>
+                        <option>2
+                        </option>
+                        <option>3
+                        </option>
+                        <option>4
+                        </option>
+                      </select><span>:</span>
+                      <select>
+                        <option>
+                        </option>
+                        <option>1
+                        </option>
+                        <option>2
+                        </option>
+                        <option>3
+                        </option>
+                        <option>4
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <button class="btn btn-blue btn-big">Send</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="assets/libs/jquery-3.3.1.min.js"></script>
+    <script src="assets/libs/select2/select2.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
